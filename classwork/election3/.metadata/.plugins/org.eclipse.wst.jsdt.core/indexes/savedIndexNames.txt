@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+D:\cdac mydata\election\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2071454700.index
+734223034.index
+1137408017.index
+1208541699.index
+662046794.index
+857007071.index

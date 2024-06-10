@@ -1,0 +1,20 @@
+package com.sunbeam.filters;
+
+import java.nio.file.DirectoryStream.Filter;
+
+import javax.servlet.FilterConfig;
+import javax.servlet.ServletException;
+
+public class LoggingFilter implements Filter {
+	
+	@Override
+		public void init(FilterConfig config) throws ServletException {
+			System.out.println("LoggingFilter.init() called.");
+		}
+		
+	@Override
+		public void destroy() {
+			System.out.println("LoggingFilter.destroy() called.");
+	}
+}
+
