@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Vote</title>
+</head>
+<body>
+	<h2>${initParam.appTitle }</h2>
+	Hello,${lb.user.fir0stName }${lb.user.lastName }<hr/>
+	<c:choose>
+		<c:when test="${lb.user.status == 0 }">
+			<jsp:useBean id="vb" class="com.sunbeam.beans.VoteBean"/>
+			<jsp:setProperty name="vb" property="userId value="${lb.user.id} }"/>
+			<jsp:setproperty name"vb" property="candId" param"candidate" />
+			${vb.vote }
+			
+		<\c:when>
+		<c:otherwise>
+			vote registered already!!!
+		</c:otherwise>
+	</c:choose>
+				
+</body>	
+</html>

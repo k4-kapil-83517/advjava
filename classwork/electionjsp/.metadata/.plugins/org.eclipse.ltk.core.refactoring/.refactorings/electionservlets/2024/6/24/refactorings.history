@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.sunbeam.daos&apos; to &apos;electionjsp/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;electionservlets&apos;&#x0D;&#x0A;- Destination element: &apos;electionjsp/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;electionservlets/src/main/java/com.sunbeam.daos&apos;" description="Copy package" destination="=electionjsp/src\/main\/java" element1="/src\/main\/java&lt;com.sunbeam.daos" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1718099551071" version="1.0"/>
+</session>

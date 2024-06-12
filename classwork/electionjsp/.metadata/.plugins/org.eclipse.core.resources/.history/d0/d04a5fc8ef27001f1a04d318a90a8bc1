@@ -1,0 +1,18 @@
++<%@page import="com.sunbeam.pojos.Candidate"%>
+ <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+     pageEncoding="ISO-8859-1"%>
+ <!DOCTYPE html>
+@@ -10,5 +11,13 @@
+ 	<h3>Online Voting</h3>
+ 	<jsp:useBean id="lb" class="com.sunbeam.beans.LoginBean" scope="session"/>
+ 	Hello, <jsp:getProperty name="lb" property="email"/> <hr/>
+	<jsp:useBean id="clb" class="com.sunbeam.beans.CandidateListBean"/>
+	<% clb.fetchCandidates(); %>
+	<form method="post" action="vote.jsp">
+		<% for(Candidate c : clb.getCandidateList()) { %>
+			<input type="radio" name="candidate" value="<%= c.getId() %>"/> <%= c.getName() %> - <%= c.getParty() %> <br/>
+		<% } %>
+		<br/> <input type="submit" value="Vote"/>
+	</form>
+ </body>
+ </html>

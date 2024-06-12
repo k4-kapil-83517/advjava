@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register</title>
+</head>
+<body>
+	<h3>${initParam.appTitle}</h3>
+	
+	<jsp:useBean id="rb" class="com.sunbeam.beans.RegistrationBean" scope="page"/>
+	<%--
+	<jsp:setproperty name="rb" property="firstname" param="firstName"/>
+	<jsp:setproperty name="rb" property="lastname" param="lastName"/>
+	<jsp:setproperty name="rb" property="email" param="email"/>
+	<jsp:setproperty name="rb" property="passwd" param"passwd"
+	--%>
+
+</body>
+</html>
